@@ -8,13 +8,9 @@ const AllCard = () => {
         fetch('data.json')
         .then(res => res.json())
         .then(data => setAllCard(data))
-        console.log(allCard)
     },[])
     return (
-        <div>
-            {
-                // allCard.map((card))
-            }
+        <div className="">
             <Cards allCard={allCard}></Cards>
         </div>
     );
