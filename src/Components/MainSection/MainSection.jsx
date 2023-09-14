@@ -3,7 +3,7 @@ import Cart from "./Cart/Cart";
 
 const MainSection = () => {
     return (
-        <div className="flex justify-between gap-5 max-w-screen-xl mx-auto px-8">
+        <div className="flex justify-between gap-5 max-w-screen-xl mx-auto px-8 pb-20">
             <div className="w-3/4">
                 <AllCard></AllCard>
             </div>
