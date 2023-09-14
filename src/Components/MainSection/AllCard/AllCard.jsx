@@ -1,16 +1,21 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import Cards from "./Cards";
 
 const AllCard = () => {
     const [allCard, setAllCard] = useState([])
     useEffect(()=>{
         fetch('data.json')
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setAllCard(data))
+        console.log(allCard)
     },[])
     return (
         <div>
-            <h2>Hello banh</h2>
+            {
+                // allCard.map((card))
+            }
+            <Cards allCard={allCard}></Cards>
         </div>
     );
 };

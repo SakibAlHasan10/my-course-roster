@@ -57,8 +57,8 @@
     },
     {
       "id": "8",
-      "img": "course_image_url_8",
-      "course_name": "https://i.ibb.co/tMZSQ7n/Become-a-Frontend-Developer.jpg",
+      "img": "https://i.ibb.co/tMZSQ7n/Become-a-Frontend-Developer.jpg",
+      "course_name": "Front-End Developer",
       "course_description": "Master front-end web development, including HTML, CSS, and JavaScript.",
       "course_price": "$79.99",
       "course_credit": "5"
