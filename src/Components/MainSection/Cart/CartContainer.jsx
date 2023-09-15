@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-const CartContainer = ({cartSide}) => {
-    console.log(cartSide)
+const CartContainer = ({cartSide, myCredit}) => {
+    console.log(myCredit)
     return (
         <div>
             <h2 className=" my-3 text-xl font-bold">Course Name</h2>
@@ -10,12 +10,13 @@ const CartContainer = ({cartSide}) => {
                     >  {cart.course_name}</h3>)
                 }
             </div>
-            <p className='my-4 border-b-2 border-solid border-[#1c1b1b33] pb-4 text-base font-medium'>Total Credit Hour : </p>
+            <p className='my-4 border-b-2 border-solid border-[#1c1b1b33] pb-4 text-base font-medium'>Total Credit Hour : {myCredit}</p>
             <p>Total Price :  USD</p>
         </div>
     );
 };
 CartContainer.propTypes ={
-    cartSide : PropTypes.array.isRequired
+    cartSide : PropTypes.array.isRequired,
+    myCredit : PropTypes.number.isRequired
 }
 export default CartContainer;

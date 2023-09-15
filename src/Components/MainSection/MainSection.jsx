@@ -5,6 +5,7 @@ import {ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 // toast.configure()
+let myCredit = 0;
 const MainSection = () => {
     let totalCredit = 20;
     const [credit, setCredit] = useState(totalCredit)
@@ -12,22 +13,27 @@ const MainSection = () => {
     const handleCredit = card =>{
         const findMultipleCard = cartSide.find(cardInArray => cardInArray.id == card.id)
         if(findMultipleCard){
-            toast.warning('Hello Geeks 6',
+            toast.warning('This course is already selected.',
             {position: toast.POSITION.TOP_CENTER})
              return
-            
         }
         const {course_credit}=card
         const gainCredit = credit - course_credit
         if(gainCredit < 0){
-            return toast.warning('your credit is low this course',{
+            return toast.warning('Your credit is low, This course credit.',{
                 position: toast.POSITION.TOP_CENTER})
         }
-        console.log(gainCredit)
+        // console.log(gainCredit)
         setCredit(gainCredit)
-        // console.log(cartSide, card)
         setCartSide([...cartSide, card])
+
+        myCredit = myCredit + parseInt(card.course_credit) 
+        // if(cartSide.length>0){
+        //     myCredit = cartSide.reduce((pCredit, cCredit, index)=>pCredit.course_credit + cCredit.course_credit,0);
+        //     console.log(cartSide[0].course_credit)
+        // }
     }
+    console.log(myCredit)
     // console.log(cartSide)
     return (
         <div className="flex justify-between gap-5 max-w-screen-xl mx-auto px-8 pb-20">
@@ -39,6 +45,7 @@ const MainSection = () => {
             </div>
             <div className="1/4">
                 <Cart credit={credit}
+                myCredit={myCredit}
                 cartSide={cartSide}
                 ></Cart>
             </div>
