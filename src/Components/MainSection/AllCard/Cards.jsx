@@ -2,9 +2,9 @@ import PropTypes from 'prop-types'
 import Card from "./Card";
 
 const Cards = ({allCard, handleCredit}) => {
-    console.log(allCard)
+    // console.log(allCard)
     return (
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-5">
             {
                 allCard.map((card, idx) =><Card key={idx} 
                 card={card} handleCredit={handleCredit}></Card>)

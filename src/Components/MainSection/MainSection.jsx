@@ -4,8 +4,8 @@ import Cart from "./Cart/Cart";
 import {ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-// toast.configure()
 let myCredit = 0;
+let coursePrice = 0
 const MainSection = () => {
     let totalCredit = 20;
     const [credit, setCredit] = useState(totalCredit)
@@ -23,28 +23,23 @@ const MainSection = () => {
             return toast.warning('Your credit is low, This course credit.',{
                 position: toast.POSITION.TOP_CENTER})
         }
-        // console.log(gainCredit)
         setCredit(gainCredit)
         setCartSide([...cartSide, card])
-
         myCredit = myCredit + parseInt(card.course_credit) 
-        // if(cartSide.length>0){
-        //     myCredit = cartSide.reduce((pCredit, cCredit, index)=>pCredit.course_credit + cCredit.course_credit,0);
-        //     console.log(cartSide[0].course_credit)
-        // }
+        coursePrice = coursePrice + parseInt(card.course_price)
     }
-    console.log(myCredit)
-    // console.log(cartSide)
+    console.log(coursePrice)
     return (
-        <div className="flex justify-between gap-5 max-w-screen-xl mx-auto px-8 pb-20">
-            <div className="w-3/4">
+        <div className="xl:flex justify-between gap-5 max-w-screen-xl mx-auto px-8 md:px-8 pb-20">
+            <div className="xl:w-3/4">
                 <ToastContainer/>
                 <AllCard 
                 handleCredit={handleCredit}
                 ></AllCard>
             </div>
-            <div className="1/4">
+            <div className="xl:1/4 mt-5 xl:mt-0">
                 <Cart credit={credit}
+                coursePrice={coursePrice}
                 myCredit={myCredit}
                 cartSide={cartSide}
                 ></Cart>
