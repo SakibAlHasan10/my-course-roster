@@ -12,7 +12,6 @@ const Card = ({card, handleCredit}) => {
             <PriceCredit card={card}
             handleCredit={handleCredit}
             ></PriceCredit>
-            
         </div>
     );
 };

@@ -1,5 +1,5 @@
 
-const CartContainer = () => {
+const CartContainer = ({credit}) => {
     return (
         <div>
             <h2>Course Name</h2>

@@ -3,10 +3,13 @@ import AllCard from "./AllCard/AllCard";
 import Cart from "./Cart/Cart";
 
 const MainSection = () => {
-    const [credit, setCredit] = useState(0)
+    let totalCredit = 20;
+    const [credit, setCredit] = useState(totalCredit)
     const handleCredit = card =>{
         const {course_credit}=card
-        console.log(course_credit)
+        const gainCredit = credit - course_credit
+        setCredit(gainCredit)
+        console.log(course_credit,gainCredit, credit)
     }
     return (
         <div className="flex justify-between gap-5 max-w-screen-xl mx-auto px-8 pb-20">
@@ -16,7 +19,8 @@ const MainSection = () => {
                 ></AllCard>
             </div>
             <div className="1/4">
-                <Cart></Cart>
+                <Cart credit={credit}
+                ></Cart>
             </div>
         </div>
     );
