@@ -3,96 +3,96 @@
       "id": "1",
       "img": "https://i.ibb.co/MSvj9n1/Rectangle-2-2.png",
       "course_name": "C Programming",
-      "course_description": "A comprehensive introduction to the C programming language.",
-      "course_price": "49.99",
+      "course_description": "Master the fundamentals of C programming, from syntax to problem-solving, and build a strong foundation in coding.",
+      "course_price": "16000",
       "course_credit": "3"
     },
     {
       "id": "2",
       "img": "https://i.ibb.co/CzW2Xjp/Rectangle-2.png",
       "course_name": "Python opp",
-      "course_description": "An in-depth course on Python opp, covering data structures, algorithms, and more.",
-      "course_price": "59.99",
+      "course_description": "Dive deep into Python, covering data structures, algorithms, and real-world applications, becoming a proficient Python programmer.",
+      "course_price": "17000",
       "course_credit": "6"
     },
     {
       "id": "3",
       "img": "https://i.ibb.co/cQnCj2P/Rectangle-2-3.png",
       "course_name": "Algorithm Design",
-      "course_description": "Master the art of algorithm design and problem-solving.",
-      "course_price": "79.99",
+      "course_description": "Hone your problem-solving skills, learn algorithm design techniques, and tackle complex computational challenges with confidence.",
+      "course_price": "19000",
       "course_credit": "9"
     },
     {
       "id": "4",
       "img": "https://i.ibb.co/RgVZDzr/Rectangle-3.png",
       "course_name": "Data Structures",
-      "course_description": "Learn about various data structures and their applications.",
-      "course_price": "69.99",
+      "course_description": "Explore various data structures, their implementations, and practical use cases for efficient data organization and manipulation.",
+      "course_price": "23000",
       "course_credit": "10"
     },
     {
       "id": "5",
       "img": "https://i.ibb.co/P5GPB6p/Rectangle-2-4.png",
       "course_name": "C++ Programming",
-      "course_description": "An in-depth course on C++ programming, including object-oriented principles.",
-      "course_price": "89.99",
+      "course_description": "Delve into C++ programming, understanding object-oriented concepts, and develop robust software applications with this versatile language..",
+      "course_price": "17000",
       "course_credit": "3"
     },
     {
       "id": "6",
       "img": "https://i.ibb.co/stXY0jt/Rectangle-2-1.png",
       "course_name": "C# Programming",
-      "course_description": "Learn C# programming and develop Windows applications.",
-      "course_price": "99.99",
+      "course_description": "Master C# programming and develop Windows applications, learning to create desktop software with a graphical user interface.",
+      "course_price": "21000",
       "course_credit": "5"
     },
     {
       "id": "7",
       "img": "https://i.ibb.co/cgCKHng/Rectangle-3-1.png",
       "course_name": "AWS Certification",
-      "course_description": "Prepare for AWS certification exams and become a certified cloud professional.",
-      "course_price": "49.99",
+      "course_description": "Prepare for AWS certification exams, acquire cloud computing skills, and become a certified cloud professional in high demand.",
+      "course_price": "14000",
       "course_credit": "6"
     },
     {
       "id": "8",
       "img": "https://i.ibb.co/tMZSQ7n/Become-a-Frontend-Developer.jpg",
       "course_name": "Front-End Developer",
-      "course_description": "Master front-end web development, including HTML, CSS, and JavaScript.",
-      "course_price": "79.99",
+      "course_description": "Become a proficient front-end web developer, mastering HTML, CSS, and JavaScript for creating interactive web interfaces.",
+      "course_price": "11000",
       "course_credit": "5"
     },
     {
       "id": "9",
       "img": "https://i.ibb.co/kVCn9nD/Back-End-Developer-Roadmap-2022.jpg",
       "course_name": "Back-End Developer",
-      "course_description": "Master back-end web development, including server-side scripting and databases.",
-      "course_price": "79.99",
+      "course_description": "Master server-side scripting, database management in web applications. Learn to build robust and efficient back-end systems for web development.",
+      "course_price": "18000",
       "course_credit": "7"
     },
     {
       "id": "10",
       "img": "https://i.ibb.co/pJSGjsR/1-EC0-Lcer1m5-Qvyna2wkhbo-A.jpg",
       "course_name": "Web Developer",
-      "course_description": "Become a full-stack web developer, covering both front-end and back-end technologies.",
-      "course_price": "99.99",
+      "course_description": "Achieve full-stack web development expertise, covering both front-end and back-end technologies, and build comprehensive web applications.",
+      "course_price": "14000",
       "course_credit": "4"
     },
     {
         "id": "11",
         "img": "https://i.ibb.co/CtSscdN/Rectangle-2-6.png",
         "course_name": "Problem Solving",
-        "course_description": "Develop problem-solving skills and algorithms for coding challenges.",
-        "course_price": "49.99",
+        "course_description": "Develop strong problem-solving abilities, mastering algorithms and coding techniques for acing technical interviews and coding competitions.",
+        "course_price": "27000",
         "course_credit": "10"
       },
       {
         "id": "12",
         "img": "https://i.ibb.co/JQB50Pr/Rectangle-2-5.png",
         "course_name": "Software Engineering",
-        "course_description": "Learn the principles and practices of software engineering and project management.",
-        "course_price": "69.99",
+        "course_description": "Learn software engineering principles and practices, including project management, to deliver efficient and maintainable software solutions.",
+        "course_price": "25000",
         "course_credit": "3"
       }
   ]

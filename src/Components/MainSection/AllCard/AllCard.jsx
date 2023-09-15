@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types'
 import { useEffect } from "react";
 import { useState } from "react";
 import Cards from "./Cards";
 
-const AllCard = () => {
+const AllCard = ({handleCredit}) => {
     const [allCard, setAllCard] = useState([])
     useEffect(()=>{
         fetch('data.json')
@@ -11,9 +12,13 @@ const AllCard = () => {
     },[])
     return (
         <div className="">
-            <Cards allCard={allCard}></Cards>
+            <Cards 
+            handleCredit={handleCredit}
+            allCard={allCard}></Cards>
         </div>
     );
 };
-
+AllCard.propTypes ={
+    handleCredit : PropTypes.func.isRequired
+}
 export default AllCard;
