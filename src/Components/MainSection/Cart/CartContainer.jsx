@@ -11,7 +11,7 @@ const CartContainer = ({cartSide, myCredit, coursePrice}) => {
                 }
             </div>
             <p className='my-4 border-b-2 border-solid border-[#1c1b1b33] pb-4 text-base font-medium'>Total Credit Hour: {myCredit}</p>
-            <p>Total Price: {coursePrice} USD</p>
+            <p className=' text-base font-semibold'>Total Price: {coursePrice} USD</p>
         </div>
     );
 };
